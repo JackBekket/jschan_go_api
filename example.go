@@ -17,13 +17,14 @@ func main() {
 	b_endpoint := os.Getenv("ENDPOINT")
 	
 	// test
-	println(b_endpoint)
-	println(board_password)
+	println("endpoint: ",b_endpoint)
+	println("password: ",board_password)
 
 
 	//client := jschan.NewClient("http://dev-jschan.lan")
 	client := jschan.NewClient(b_endpoint)
 	ctx := context.Background()
+	//client.BaseURL
 
 	loginOptions := &jschan.PostLoginOptions{
 		//Credentials for a private dev jschan
@@ -43,6 +44,7 @@ func main() {
 		}
 	}
 
+	/*
 	manageReportsOptions := &jschan.GetManageReportsOptions{
 		Page:  0,
 		IP:    "10.0.0.192",
@@ -54,5 +56,7 @@ func main() {
 		return
 	}
 	fmt.Printf("Fetched %d reports\n", len(reports.Reports))
+
+	*/
 
 }
