@@ -3,18 +3,32 @@ package main
 import (
 	"context"
 	"fmt"
-	"jschan/app"
+	jschan "jschan/app"
+	"os"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
 
-	client := jschan.NewClient("http://dev-jschan.lan")
+
+	_ = godotenv.Load()
+	board_password := os.Getenv("PASSWORD")
+	b_endpoint := os.Getenv("ENDPOINT")
+	
+	// test
+	println(b_endpoint)
+	println(board_password)
+
+
+	//client := jschan.NewClient("http://dev-jschan.lan")
+	client := jschan.NewClient(b_endpoint)
 	ctx := context.Background()
 
 	loginOptions := &jschan.PostLoginOptions{
 		//Credentials for a private dev jschan
 		Username: "admin",
-		Password: "WjPQLl7mOGsjpRjPezY8FsCdnXI=",
+		Password: board_password,
 	}
 	err := client.Login(ctx, loginOptions)
 	if err != nil {
