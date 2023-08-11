@@ -44,9 +44,9 @@ func main() {
 		}
 	}
 
-	GetBanners(*client,ctx)
-	GetBoards(*client,ctx,"b")
-	GetBoardIndexPages(*client,ctx,"b")
+	//GetBanners(*client,ctx)
+	//GetBoards(*client,ctx,"b")
+	//GetBoardIndexPages(*client,ctx,"b")
 
 	GetRecentPosts(*client,ctx,"b")
 
