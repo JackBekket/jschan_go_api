@@ -146,10 +146,10 @@ func GetCustomPage(client jschan.Client, ctx context.Context,board_name string,p
 }
 
 
-func GetBanners(client jschan.Client, ctx context.Context) {
+func GetBanners(client jschan.Client, ctx context.Context, board_name string) {
 
 	getBannersOptions := &jschan.GetBannersOptions{
-		Board: "t",
+		Board: board_name,
 	  }
 	  banners, err := client.GetBanners(ctx, getBannersOptions)
 	  if err != nil {
