@@ -1,0 +1,7 @@
+#test
+
+# login options
+USERNAME = admin
+PASSWORD = ''
+ENDPOINT = 'http://127.0.0.1:80'
+
