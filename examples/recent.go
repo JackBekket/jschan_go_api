@@ -108,7 +108,7 @@ func GetRecentPostsAsync(client jschan.Client, ctx context.Context, board_name s
 		
 		recentPostsChan <- &recent
 
-		close(recentPostsChan) // not sure we need it
+		//close(recentPostsChan) // not sure we need it
 	}()
 
 	return recentPostsChan
