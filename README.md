@@ -2,6 +2,8 @@
 
 API client for jschan imageboard software written in go.
 
+Original repo: https://gitgud.io/fatchan/jschan-api-go
+
 `godoc` generated docs: https://fatchan.gitgud.site/jschan-api-go/pkg/jschan/
 
 jschan repo: [fatchan/jschan](https://gitgud.io/fatchan/jschan/)
