@@ -1,4 +1,4 @@
-module jschan_go_api
+module github.com/jackbekket/jschan_go_api
 
 go 1.19
 

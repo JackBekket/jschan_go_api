@@ -3,9 +3,10 @@ package jschan
 import (
 	"context"
 	"fmt"
-	"jschan/app/models"
 	"net/http"
 	"net/url"
+
+	"github.com/jackbekket/jschan_go_api/app/models"
 )
 
 type GetWebringResponse struct {

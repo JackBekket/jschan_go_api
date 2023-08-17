@@ -3,10 +3,11 @@ package jschan
 import (
 	"context"
 	"fmt"
-	"jschan/app/models"
 	"net/http"
 	"net/url"
 	"strings"
+
+	"github.com/jackbekket/jschan_go_api/app/models"
 )
 
 type GetOverboardOptions struct {

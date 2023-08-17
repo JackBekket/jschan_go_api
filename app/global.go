@@ -3,8 +3,9 @@ package jschan
 import (
 	"context"
 	"fmt"
-	"jschan/app/models"
 	"net/http"
+
+	"github.com/jackbekket/jschan_go_api/app/models"
 )
 
 type GetGlobalSettingsResponse struct {

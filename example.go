@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	jschan "jschan_go_api/app"
+	jschan "github.com/jackbekket/jschan_go_api/app"
 
 	"github.com/joho/godotenv"
 )

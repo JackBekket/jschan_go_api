@@ -3,9 +3,10 @@ package jschan
 import (
 	"context"
 	"fmt"
-	"jschan/app/models"
 	"net/http"
 	"strconv"
+
+	"github.com/jackbekket/jschan_go_api/app/models"
 )
 
 type GetCatalogOptions struct {
