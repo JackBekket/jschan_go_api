@@ -3,8 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	jschan "jschan/app"
 	"os"
+
+	jschan "jschan_go_api/app"
 
 	"github.com/joho/godotenv"
 )
