@@ -44,7 +44,7 @@ type GetIndexResponse struct {
 	*models.Post
 }
 
-func (c *Client) GetIndex(ctx context.Context, options *GetIndexOptions) (*GetIndexResponse, error) {
+func (c *Client) GetIndex(ctx context.Context, options *GetIndexOptions) (*[]GetIndexResponse, error) {
 
 	pageString := strconv.Itoa(options.Page)
 	if pageString == "1" {
@@ -60,7 +60,7 @@ func (c *Client) GetIndex(ctx context.Context, options *GetIndexOptions) (*GetIn
 
 	req = req.WithContext(ctx)
 
-	res := GetIndexResponse{}
+	res := []GetIndexResponse{}
 	if err := c.sendRequest(req, &res, nil); err != nil {
 		return nil, err
 	}
